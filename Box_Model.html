@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+ .container {
+    display: flex;
+    gap: 20px; /* dono ke darmiyan space */
+}
+.content{
+    height: 423px;
+    width: 345px;
+    background-color: red;
+    color: white;
+    margin: 14px;
+    /* margin:4px 2px 6px 1px; TOP RIGHT BOTTOM LEFT  */
+     /* margin:6px 1px; TOP BOTTOM LEFT RIGHT */
+    padding: 13px;
+    border: 4px solid black;/* WIDTH STYLE COLOR */
+    border-radius: 9px;/* ROUND CORNERS */
+}
+.control{
+    height: 423px;
+    width: 345px;
+    background-color: red;
+    color: white;
+    margin: 14px;
+    padding: 13px;
+    border: 4px solid black;
+    border-radius: 9px;
+}
+.first{
+    height: 423px;
+    width: 345px;
+    background-color: red;
+    color: white;
+    margin: 14px;
+    padding: 13px;
+    border: 4px solid black;
+    border-radius: 9px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="content">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo ipsum, quisquam illum eos rerum sapiente reiciendis exercitationem velit tenetur quam repudiandae, aperiam, consequatur rem porro unde. Quidem neque magnam ipsa sint ut distinctio ad?
+    </div>
+    <div class="control">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quos quisquam alias, quod exercitationem iure repellat. Aut laudantium eaque possimus dignissimos, voluptas cum saepe quod voluptatem sequi quos sint rerum velit atque repudiandae porro.</div>
+    <div class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolorum libero, unde officiis dolor, repellendus accusamus voluptas, placeat atque itaque sit culpa velit doloremque. Earum deleniti laborum, consectetur ab quo in hic tempora id minus aut inventore atque dolorum quisquam error et magnam fugiat voluptates maiores eos adipisci ipsum eaque. Impedit ratione culpa repellat architecto quidem nemo maxime dolore, quae aut dignissimos, incidunt praesentium, iste laborum. Minus, repellendus.</div>
+</div>
+   <!-- Total Height =height+top/bottom padding +top/bottom border+top/bottom margin -->
+</body>
+</html>
