@@ -5,17 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMS</title>
     <style>
+        .container{
+            margin: 34px;
+            height: 500px;
+            padding: 5px 15px;
+            border-radius: 6px;
+        }
+        .form-row{
+            display: flex;
+            gap: 1px;
+            padding:5px 15px;
+        }
+        h1{
+            color:black;
+             margin-left: 20px;
+        }
+        h4{
+            color: grey;
+              margin-left: 20px;
+
+        }
+        .input-box{
+            width: 250px;
+            height: 35px;
+            box-sizing:border-box;
+        }
+        .next-button{
+            background-color: blue;
+            color: white;
+            justify-content: center;
+            border: 2px solid;
+            border-radius: 6px;
+            box-sizing: border-box;
+            width: 250px;
+            height: 35px;
+            padding: 5px 15px;
+             margin-left: 20px;
+             
+        }
    </style>
 </head>
-<body>
-    <div class="container">
+<body  style="background-color: blue;">
+    <div style="background-color: white;" class="container">
        <h1>Registration</h1>
         <h4>Personal Details</h4>
         <div class="form-row">
          <div class="input-box">
         <label for="Full Name">Full Name</label><br>
-        <input type="text"placeholder=" Enter your name">
-    </div>
+        <input type="text"placeholder=" Enter your name"></div>
        <div class="input-box">
         <label for="Date Of Birth">Date Of Birth</label><br>
          <input type="date"placeholder=" Enter birth date">
@@ -24,7 +61,8 @@
         <label for="Email">Email</label><br>
          <input type="text"placeholder=" Enter your email">
         </div>
-        
+        </div>
+        <div class="form-row">
         <div class="input-box">
            <label for="Mobile number">Mobile number</label><br>
            <input type="text" placeholder="Enter mobile number">
@@ -39,7 +77,7 @@
             </div>
             </div>
             <h4>Identity Details </h4>
-            <div class="form-row"></div>
+            <div class="form-row">
             <div class="input-box">
              <label for="ID Type">ID Type</label><br>
             <input type="text" placeholder="Enter ID Type">
@@ -52,6 +90,8 @@
              <label for="Issue Authority">Issue Authority</label><br>
             <input type="text" placeholder="Enter issue department ">
             </div>
+            </div>
+             <div class="form-row">
             <div class="input-box">
              <label for="Issue Date">Issue Date</label><br>
             <input type="date" placeholder="Enter ID issue date">
@@ -64,11 +104,12 @@
              <label for="Expiry Date">Expiry Date</label><br>
             <input type="date" placeholder="Enter ID expiry date ">
             </div>
-          </div>
+            </div><br>
             <div>
                 <button class="next-button" type="button"> 
                     Next &rarr;
                  </button>
             </div>
+          </div>
 </body>
 </html>
