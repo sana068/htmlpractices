@@ -4,8 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Position Property </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+         ul{
+            background-color: black;
+            color: white;
+         }
+        li{
+            /* display: inline; */
+            list-style: square;
+        }
+        header{
+            background-color: black;
+            color: white;
+             height: 70px;
+        }
+        p{
+            text-align: center;
+            border: 2px solid black;
+        }
+        .container{
+            background-color: aqua;
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            position: relative;
+            top: 0;
+            z-index: 3;
+        }
+        /* .box2{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(32, 27, 159);
+        } */
+    </style>
 </head>
 <body>
-    
+    <header>
+<nav>
+    <ul>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>CONTACT</li>
+        <li>SERVICE</li>
+    </ul>
+</nav>
+    </header>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus laboriosam itaque molestiae doloribus, illo quibusdam? Nostrum dolores cupiditate unde beatae, laudantium amet commodi nemo nobis ea, saepe animi consequatur ullam quae et sed!/</p>
+        <div class="box">
+        Overthinking is a box 
+    </div>
+    <!-- <div class="box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, harum corporis facere quod sed, velit voluptatum quasi odio veritatis aspernatur, in sit nihil!</div> -->
+    </div>
+    <div>
+        <ul>
+            <li>APPLE</li>
+            <li>BANANA</li>
+            <li>ORANGE</li>
+        </ul>
+    </div>
 </body>
 </html>
