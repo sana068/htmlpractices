@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK OVERTHINGKING</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            background-color: bisque;
+        }
+
+        .container {
+            background-color: black;
+            font-family: sans-serif;
+            border: 4px solid blue;
+            border-radius: 10px;
+            width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1,
+        h3 {
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .Add {
+            background-color: blue;
+            color: black;
+            padding: 8px 15px;
+            border-radius: 6px;
+            font-family: sans-serif;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .task-box {
+            display: flex;
+            align-items: center;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            margin: 10px 0;
+            padding: 10px;
+            font-family: sans-serif;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+
+        .delete {
+            color: red;
+            margin-left: 15px;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            border-top: 3px solid blue;
+            padding-top: 10px;
+        }
+
+        .task-text {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> To Do List</h1>
+       <center> <input type="text" style="height: 25px ; border-radius: 6px;margin-top: 20px;">
+            <button class="Add">Add</button></center>
+        <h3>Task List </h3>
+        <div class="task-box">
+            <input type="checkbox">
+            <span class="task-text">wash dishes</span>
+            <span class="delete">Delete</span>
+            <span class="delete ">Edit</span>
+        </div>
+        <div class="task-box">
+            <input type="checkbox">
+            <span class="task-text">edit resume</span>
+            <span class="delete">Delete</span>
+            <span class="delete ">Edit</span>
+        </div>
+        <div class="task-box">
+            <input type="checkbox">
+            <span class="task-text">finish Codedex course</span>
+            <span class="delete">Delete</span>
+            <span class="delete ">Edit</span>
+        </div>
+        <footer>
+            Completed: 1 | Uncompleted: 2
+        </footer>
+    </div>
+</body>
+</html>
