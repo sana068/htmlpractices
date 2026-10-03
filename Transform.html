@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSFORM</title>
+    <style>
+        .container{
+            background-color: blue;
+            color: white;
+            height: 146px;
+        }
+        .box{
+            border: 2px solid black;
+            transform: translate(34px);
+            transform-origin: 0;
+            display: inline-block;
+            /* transform: scale(4,7); */
+            /* transform: scaleX(8); */
+            /* transform: scaleY(8); */
+            /* transform: skew(10deg,10deg); */
+            /* background-image: url('download.jpg');
+            background-repeat: repeat;   */
+            /* background-size: 50px 50px; */
+        }
+        img{
+            width: 446px;
+            transition-property:width ;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 3s;
+            /* transition: width 1s ease-in-out 2s; */
+        }
+        /* img:hover{
+            width: 56px;
+        } */
+    </style>
+</head>
+<body>
+        <div class="container">
+    <div class="box">
+        <img id="myImage" src="download.jpg">
+        <button id="btn">Toggle</button>
+</div>
+    </div>
+</body>
+<script>
+    myImage.style.width = '146px'
+    btn.addEventListener("click", () => {
+        if(myImage.style.width === '546px'){
+            myImage.style.width = "146px";
+        }
+        else if(myImage.style.width === '146px'){
+            myImage.style.width = "546px";
+        }
+    })
+</script>
+</html>
